@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -150,7 +151,7 @@ class SubPage extends StatelessWidget {
                       child: Text(
                         "Let's Roll",
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: GoogleFonts.zillaSlab(
                           fontStyle: FontStyle.italic,
                           fontSize: 60.0,
                         ),
