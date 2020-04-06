@@ -18,8 +18,8 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(centerTitle: true, title: Text('Flutter Vadodara')),
       body: Container(
-        padding: EdgeInsets.only(top: 16, bottom: 16),
-        margin: EdgeInsets.fromLTRB(32, 0, 32, 0),
+         padding: EdgeInsets.symmetric(vertical: 16),
+          margin: EdgeInsets.symmetric(horizontal: 36),
         child: Column(
           children: [
             Container(
@@ -77,81 +77,83 @@ class SubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Back to Main Page'),
-        backgroundColor: Colors.blue,
-      ),
-      body: Column(
-        children: [
-          Row(
-            children: <Widget>[
-              Container(
-                color: Colors.indigoAccent,
-                width: 80.0,
-                height: 90,
-                margin: EdgeInsets.all(20),
+        appBar: AppBar(
+          title: Text('Back to Main Page'),
+          backgroundColor: Colors.blue,
+        ),
+        body: Container(
+          padding: EdgeInsets.symmetric(vertical: 16),
+          margin: EdgeInsets.symmetric(horizontal: 32),
+          child: Column(
+            children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    color: Colors.indigoAccent,
+                    width: 80.0,
+                    height: 90,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                        gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [Colors.yellow, Colors.orangeAccent])),
+                    width: 80.0,
+                    height: 90,
+                    margin: EdgeInsets.all(20),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                        gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [Colors.yellow, Colors.pink])),
+                    width: 80.0,
+                    height: 90,
+                    margin: EdgeInsets.all(20),
+                  ),
+                ],
+              ),
+              Image.asset(
+                'assets/img/FV.jpeg',
+                alignment: Alignment.center,
+                width: 220,
+                height: 220,
+                fit: BoxFit.contain,
               ),
               Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
+                  width: 250.0,
+                  height: 100,
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.all(30),
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 19.0,
+                        color: Colors.black.withOpacity(.5),
+                        offset: Offset(6.0, 7.0),
+                      ),
+                    ],
+                    color: Colors.tealAccent,
+                    borderRadius: new BorderRadius.circular(10.0),
+                  ),
+                  child: Text(
+                    "Let's Roll",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 60.0,
                     ),
-                    gradient: LinearGradient(
-                        begin: Alignment.topRight,
-                        end: Alignment.bottomLeft,
-                        colors: [Colors.yellow, Colors.orangeAccent])),
-                width: 80.0,
-                height: 90,
-                margin: EdgeInsets.all(20),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
-                    ),
-                    gradient: LinearGradient(
-                        begin: Alignment.topRight,
-                        end: Alignment.bottomLeft,
-                        colors: [Colors.yellow, Colors.pink])),
-                width: 80.0,
-                height: 90,
-                margin: EdgeInsets.all(20),
-              ),
+                  ))
             ],
           ),
-          Image.asset(
-            'assets/img/FV.jpeg',
-            alignment: Alignment.center,
-            width: 220,
-            height: 220,
-            fit: BoxFit.contain,
-          ),
-          Container(
-              width: 250.0,
-              height: 100,
-              margin: EdgeInsets.all(30),
-              decoration: BoxDecoration(
-                 boxShadow: [
-                BoxShadow(
-                  blurRadius: 19.0,
-                  color: Colors.black.withOpacity(.5),
-                  offset: Offset(6.0, 7.0),
-                ),
-              ],
-                color: Colors.tealAccent,
-                borderRadius: new BorderRadius.circular(10.0),
-              ),
-              child: Center(
-                  child: Text(
-                "Let's Roll",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  fontSize: 60.0,
-                ),
-              )))
-        ],
-      ),
-    );
+        ));
   }
 }
