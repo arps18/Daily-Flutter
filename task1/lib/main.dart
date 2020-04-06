@@ -95,7 +95,7 @@ class SubPage extends StatelessWidget {
                         color: Colors.indigoAccent,
                       ),
                     ),
-                    SizedBox( width: 16),
+                    SizedBox(width: 16),
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
@@ -108,7 +108,7 @@ class SubPage extends StatelessWidget {
                                 colors: [Colors.yellow, Colors.orangeAccent])),
                       ),
                     ),
-                    SizedBox( width: 16),
+                    SizedBox(width: 16),
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
@@ -132,9 +132,9 @@ class SubPage extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-                   SizedBox(height: 16),
+              SizedBox(height: 16),
               Container(
-                height: 100,
+                  height: 100,
                   child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
