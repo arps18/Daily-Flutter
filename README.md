@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # calculator
 
 A new Flutter project.
+=======
+# Daily-Flutter
+Creating and making various flutter task daily.
+
+>>>>>>> 8a457212901028afddefccbf223d6add76fdbfa3
 
 ## Getting Started
 
